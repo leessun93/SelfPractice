@@ -22,7 +22,7 @@ public class ReverseString {
 		System.out.println( sb.toString());
 		//어팬드에 계속 쌓이나보다
 
-		//insert 원하는 위치에 추가
+	 
 		sb.insert(2, "다음으로"); // 2번째 위치에 다음으로를 추가하였다.
 		
 		System.out.println( sb.toString());
