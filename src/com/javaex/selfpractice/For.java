@@ -1,5 +1,8 @@
 package com.javaex.selfpractice;
 
+import java.util.ArrayList;
+import java.util.Random;
+
 public class For {
 
 	public static void main(String[] args) {
@@ -50,6 +53,34 @@ public class For {
 			
 		}
 		
+//		Random을 사용하여 for문으로 커피 주문 알고리즘 만들기
+		Random rand = new Random();
+		
+		
+		ArrayList<String> coffee = new ArrayList<String>();
+		
+		coffee.add("캬라멜마끼아또");
+		coffee.add("아메리카노");
+		coffee.add("카페모카");
+		
+		System.out.println(coffee);
+		
+		ArrayList<String> customer = new ArrayList<String>();
+		customer.add("김칠복");
+		customer.add("박순자");
+		customer.add("최영순");
+		customer.add("정동남");
+		
+		System.out.println(customer);
+		
+		
+		
+
+		for(int i = 0; i<customer.size(); i++) {
+			int x = rand.nextInt(customer.size());
+			int y = rand.nextInt(coffee.size());
+			System.out.println(customer.get(x) +"손님 주문하신"+ coffee.get(y)+"나오셨습니다.");
+		}
 		
 		
 		
